@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Ion",
+      "lastName": "Rusu",
+      "email": "rus@io.com",
+      "favoriteColor": "Red",
+      "birthday": "02/16"
+    },
+    "contact2": {
+      "firstName": "Anne",
+      "lastName": "Zicarelli",
+      "email": "ant@zica.com",
+      "favoriteColor": "Blue",
+      "birthday": "03/30"
+    },
+    "contact3": {
+      "firstName": "Vallery",
+      "lastName": "Tovarishka",
+      "email": "valer@tovarishka.com",
+      "favoriteColor": "White",
+      "birthday": "01/27"
+    }
+  }
