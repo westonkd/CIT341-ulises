@@ -1,0 +1,7 @@
+//LOCALHOST
+##
+http://localhost:8080
+###
+http://localhost:8080/all
+###
+http://localhost:8080/api/contacts/632e4c664cc3484dd84c8073

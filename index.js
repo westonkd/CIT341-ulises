@@ -1,14 +1,16 @@
-const http = require('http');
-
-const hostname = 'localhost';
+const express = require('express');
+const app = express();
 const PORT = 8080;
+const mongodb = require('./db/connect');
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World');
-});
+app.use('/', require('./routes'));
 
-server.listen(PORT, hostname, () => {
-  console.log(`Server running at http://${hostname}:${PORT}/`);
+// Main
+mongodb.initDb((err, mongodb) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(PORT);
+    console.log(`Connected to port: ${PORT}`);
+  }
 });
