@@ -1,23 +1,14 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongodb = require('./db/connect');
+const http = require('http');
 
+const hostname = 'localhost';
 const PORT = 8080;
-const app = express();
 
-app
-  .use(bodyParser.json())
-  .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    next();
-  })
-  .use('/', require('./routes'));
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
+});
 
-mongodb.initDb((err, mongodb) => {
-  if (err) {
-    console.log(err);
-  } else {
-    app.listen(port);
-    console.log(`Connected on ${PORT}`);
-  }
+server.listen(PORT, hostname, () => {
+  console.log(`Server running at http://${hostname}:${PORT}/`);
 });
