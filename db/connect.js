@@ -3,7 +3,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 const MongoClient = require('mongodb').MongoClient;
-
+const MongoServer = process.env.MONGODB_URI
 let _database;
 
 const initDb = (callback) => {
@@ -12,7 +12,7 @@ const initDb = (callback) => {
     return callback(null, _database);
   }
   // Here we pass the mongo uri that this app requires in order to connect to the database
-  MongoClient.connect(process.env.MONGODB_URI)
+  MongoClient.connect(MongoServer)
     .then((client) => {
       _database = client;
       callback(null, _database);
