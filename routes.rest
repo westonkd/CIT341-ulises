@@ -1,7 +1,12 @@
 //LOCALHOST
-##
-http://localhost:8080
 ###
-http://localhost:8080/all
+//get all contacts
+http://localhost:8080/app/contacts/ 
 ###
-http://localhost:8080/api/contacts/632e4c664cc3484dd84c8073
+http://localhost:8080/app/contacts/632e4c664cc3484dd84c8073
+###
+http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806e
+###
+http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806d
+###
+http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806f
