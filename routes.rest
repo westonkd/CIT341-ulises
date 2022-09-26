@@ -29,7 +29,7 @@ content-type: application/json
     "birthday":"04/26/2003" 
 } 
 ### DELETE contact
-DELETE http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806e HTTP/1.1
+DELETE http://localhost:8080/app/contacts/6331b1be0f997002586a5bfb HTTP/1.1
 
 //DEPLOYMENT
 ###
@@ -39,3 +39,29 @@ https://cit341.onrender.com/app/contacts
 https://cit341.onrender.com/app/contacts/632e29eb4cc3484dd84c806d
 ###
 https://cit341.onrender.com/app/contacts/632e29eb4cc3484dd84c806f
+
+### Create contact
+POST https://cit341.onrender.com/app/contacts HTTP/1.1
+content-type: application/json
+
+{ 
+    "firstName":"Ashton", 
+    "lastName":"Curley", 
+    "email":"ashesCur@example.com", 
+    "favoriteColor":"greenish", 
+    "birthday":"10/11/2001" 
+}
+
+### Update contact
+PUT https://cit341.onrender.com/app/contacts/6331b1bf0f997002586a5bfc HTTP/1.1 
+content-type: application/json
+
+{ 
+    "firstName":"Taylor", 
+    "lastName":"Swift", 
+    "email":"swift@example.com", 
+    "favoriteColor":"grey", 
+    "birthday":"04/26/1998" 
+} 
+### DELETE contact
+DELETE https://cit341.onrender.com/app/contacts/6331ad277c89fbb7011c722a HTTP/1.1
