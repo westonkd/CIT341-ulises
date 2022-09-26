@@ -1,21 +1,40 @@
 //LOCALHOST
 ###
 //get all contacts
-http://localhost:8080/app/contacts/ 
+GET http://localhost:8080/app/contacts/ 
 ###
-http://localhost:8080/app/contacts/632e4c664cc3484dd84c8073
-###
-http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806e
-###
-http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806d
-###
-http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806f
+GET http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806d
+
+### Create contact 
+POST http://localhost:8080/app/contacts HTTP/1.1
+content-type: application/json
+
+{ 
+    "firstName":"Ashley", 
+    "lastName":"CarpenterIya", 
+    "email":"ashesCar@example.com", 
+    "favoriteColor":"green", 
+    "birthday":"10/11/2002" 
+}
+
+### Update Contact Information
+PUT http://localhost:8080/app/contacts/6331ab5e9a5367c3884b832e HTTP/1.1 
+content-type: application/json
+
+{ 
+    "firstName":"Taylor", 
+    "lastName":"Taylor", 
+    "email":"taytei@example.com", 
+    "favoriteColor":"grey", 
+    "birthday":"04/26/2003" 
+} 
+### DELETE contact
+DELETE http://localhost:8080/app/contacts/632e29eb4cc3484dd84c806e HTTP/1.1
 
 //DEPLOYMENT
 ###
 https://cit341.onrender.com/app/contacts
-###
-https://cit341.onrender.com/app/contacts/632e29eb4cc3484dd84c806e
+
 ###
 https://cit341.onrender.com/app/contacts/632e29eb4cc3484dd84c806d
 ###
