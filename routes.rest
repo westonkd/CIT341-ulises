@@ -18,7 +18,7 @@ content-type: application/json
 }
 
 ### Update Contact Information
-PUT http://localhost:8080/app/contacts/6331ab5e9a5367c3884b832e HTTP/1.1 
+PUT http://localhost:8080/app/contacts/6331b1bf0f997002586a5bfc HTTP/1.1 
 content-type: application/json
 
 { 
@@ -29,7 +29,7 @@ content-type: application/json
     "birthday":"04/26/2003" 
 } 
 ### DELETE contact
-DELETE http://localhost:8080/app/contacts/6331b1be0f997002586a5bfb HTTP/1.1
+DELETE http://localhost:8080/app/contacts/6331b1bf0f997002586a5bfc HTTP/1.1
 
 //DEPLOYMENT
 ###
@@ -53,7 +53,7 @@ content-type: application/json
 }
 
 ### Update contact
-PUT https://cit341.onrender.com/app/contacts/6331b1bf0f997002586a5bfc HTTP/1.1 
+PUT https://cit341.onrender.com/app/contacts/6331b5d10f997002586a5bfd HTTP/1.1 
 content-type: application/json
 
 { 
@@ -64,4 +64,4 @@ content-type: application/json
     "birthday":"04/26/1998" 
 } 
 ### DELETE contact
-DELETE https://cit341.onrender.com/app/contacts/6331ad277c89fbb7011c722a HTTP/1.1
+DELETE https://cit341.onrender.com/app/contacts/6331b5d10f997002586a5bfd HTTP/1.1
