@@ -5,7 +5,7 @@ const doc = {
     title: 'cse341',
     description: 'Description',
   },
-  host: 'localhost:8080',
+  host: 'https://cit341.onrender.com',
   schemes: ['http'],
 };
 
