@@ -13,15 +13,15 @@ const {
 
 
 // Main
-router.get('/', cors(), getAllContacts);
+router.get('/', getAllContacts);
 
-router.get('/:id',cors(), getContactById);
+router.get('/:id', getContactById);
 
-router.post('/',cors(), createContact)
+router.post('/', createContact)
 
-router.put('/:id',cors(), updateContact);
+router.put('/:id', updateContact);
 
-router.delete('/:id',cors(), deleteContact);
+router.delete('/:id', deleteContact);
 
 // Exports
 module.exports = router;
