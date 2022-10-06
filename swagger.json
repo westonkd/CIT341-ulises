@@ -5,10 +5,10 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "https://cse341-ulises.onrender.com",
+  "host": "",
   "basePath": "/",
   "schemes": [
-    "https"
+    "https", "http"
   ],
   "paths": {
     "/api-docs": {
