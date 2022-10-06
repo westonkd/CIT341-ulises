@@ -1,5 +1,5 @@
 //@TS-Check
-
+var cors = require('cors')
 const express = require('express');
 const router = express.Router();
 
@@ -12,15 +12,15 @@ const {
 } = require('../controllers/contacts.controllers');
 
 // Main
-router.get('/', getAllContacts);
+router.get('/', cors(), getAllContacts);
 
-router.get('/:id', getContactById);
+router.get('/:id',cors(), getContactById);
 
-router.post('/', createContact)
+router.post('/',cors(), createContact)
 
-router.put('/:id', updateContact);
+router.put('/:id',cors(), updateContact);
 
-router.delete('/:id', deleteContact);
+router.delete('/:id',cors(), deleteContact);
 
 // Exports
 module.exports = router;
