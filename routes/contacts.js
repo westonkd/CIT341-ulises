@@ -11,16 +11,10 @@ const {
     deleteContact
 } = require('../controllers/contacts.controllers');
 
-var whitelist = ['https://cse341-ulises.onrender.com/']
 var corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
+    origin: 'https://cse341-ulises.onrender.com/',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   }
-}
  
 
 // Main
