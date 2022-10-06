@@ -1,7 +1,7 @@
 const cors = require("cors");
 
 var corsOptions = {
-  origin: "https://cse341-ulises.onrender.com",
+  origin: "*",
 };
 
 module.exports = cors(corsOptions);
