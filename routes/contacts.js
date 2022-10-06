@@ -12,7 +12,7 @@ const {
 } = require('../controllers/contacts.controllers');
 
 var corsOptions = {
-    origin: 'https://https://cse341-ulises.onrender.com/api-docs',
+    origin: 'https://https://cse341-ulises.onrender.com/app/contacts/',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   }
  
@@ -20,13 +20,13 @@ var corsOptions = {
 // Main
 router.get('/', cors(corsOptions), getAllContacts);
 
-router.get('/:id',cors(corsOptions), getContactById);
+router.get('/:id', getContactById);
 
-router.post('/',cors(corsOptions), createContact)
+router.post('/', createContact)
 
-router.put('/:id',cors(corsOptions), updateContact);
+router.put('/:id', updateContact);
 
-router.delete('/:id',cors(corsOptions), deleteContact);
+router.delete('/:id', deleteContact);
 
 // Exports
 module.exports = router;
