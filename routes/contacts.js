@@ -12,7 +12,7 @@ const {
 } = require('../controllers/contacts.controllers');
 
 var corsOptions = {
-    origin: 'https://https://cse341-ulises.onrender.com/app/contacts/',
+    origin: 'https://cit341-ulises.onrender.com/app/contacts',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   }
  
