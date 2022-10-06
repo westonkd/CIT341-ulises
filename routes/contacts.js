@@ -11,22 +11,17 @@ const {
     deleteContact
 } = require('../controllers/contacts.controllers');
 
-var corsOptions = {
-    origin: 'https://cit341-ulises.onrender.com/',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  }
- 
 
 // Main
-router.get('/', cors(corsOptions), getAllContacts);
+router.get('/', cors(), getAllContacts);
 
-router.get('/:id', getContactById);
+router.get('/:id',cors(), getContactById);
 
-router.post('/', createContact)
+router.post('/',cors(), createContact)
 
-router.put('/:id', updateContact);
+router.put('/:id',cors(), updateContact);
 
-router.delete('/:id', deleteContact);
+router.delete('/:id',cors(), deleteContact);
 
 // Exports
 module.exports = router;
